@@ -9,7 +9,7 @@ This may be useful if you want to use AES on your WiFi.
 See [below](#simple-setup) for a quick way to create your [PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure) or [supply your own](#configuration), then run:
 
 ```
-docker run -d -p 1812:1812/udp --restart=always -v pki:/etc/raddb/certs -e CLIENT_ADDRESS=... -e CLIENT_SECRET=... -e PRIVATE_KEY_PASSWORD=... faun88/docker-radius-eap-tls
+docker run -d -p 1812:1812/udp --restart=always -v pki:/etc/raddb/certs -e -e PRIVATE_KEY_PASSWORD=P@ssw0rd faun88/docker-radius-eap-tls
 ```
 
 # Configuration
