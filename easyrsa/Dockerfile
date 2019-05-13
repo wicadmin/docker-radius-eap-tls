@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:latest
 
 RUN apk add --no-cache --upgrade openssl tar && \
     addgroup -g 101 radius && \
