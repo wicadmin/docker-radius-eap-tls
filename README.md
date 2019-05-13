@@ -37,7 +37,7 @@ Running the following will create each file not already present in the volume, p
 - Client certificate and key for an entity named `laptop`
 
 ```bash
-git clone git@github.com:evansgp/docker-radius-eap-tls.git
+git clone https://github.com/faun88/docker-radius-eap-tls.git
 cd docker-radius-eap-tls
 docker build easyrsa -t easyrsa
 docker run -it -v pki:/easyrsa/pki easyrsa build-client-full laptop
