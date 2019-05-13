@@ -58,8 +58,6 @@ Now configure your AP with WPA2 Enterprise, AES, the server IP and client secret
 
 [easy-rsa](https://github.com/OpenVPN/easy-rsa/) can quickly generate your certificates and keys.
 
-# WARNING WARNING WARNING
+# Warning
 
-This probably isn't secure and will most likely rape your dogs and kill your women.
-
-Look after your PKI.
+Use at your own risk
