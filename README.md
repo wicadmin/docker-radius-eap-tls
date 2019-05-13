@@ -20,13 +20,13 @@ Radius is listening on port 1812 UDP.
 
 The following environment variables are used:
 
-- CLIENT_ADDRESS, where to accept connections from (i.e. your AP) (mandatory)
-- CLIENT_SECRET, the password shared with your AP (mandatory)
 - PRIVATE_KEY_PASSWORD, password for the private key (mandatory)
 - PRIVATE_CERT, the filename of the private cert (default: issued/server.crt)
 - PRIVATE_KEY, filename of the private key (default: private/server.key)
 - CA_CERT, filename of the CA certificate (default: ca.crt)
 - DH_FILE, filename of the DH parameters (default: dh.pem)
+
+You can configure the IP adresses of your AP's and the secrets in `clients.cfg`.
 
 # Simple setup
 
