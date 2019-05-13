@@ -50,13 +50,13 @@ docker run -it -v pki:/easyrsa/pki easyrsa build-client-full android-phone
 docker run -it -v pki:/easyrsa/pki easyrsa export-p12 android-phone
 ```
 
-For mac you can use the following command to create a .pxf certificate which you can import in your keychain:
+Import `private/android-phone.p12` to your device.
+
+For mac you can use the following command to create a .pfx certificate which you can import in your keychain:
 
 ```bash
 openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt 
 ```
-
-Import `private/android-phone.p12` to your device.
 
 Now configure your AP with WPA2 Enterprise, AES, the server IP and client secret.
 
