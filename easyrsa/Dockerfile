@@ -6,7 +6,7 @@ RUN apk add --no-cache --upgrade openssl tar && \
 
 WORKDIR /easyrsa
 COPY entrypoint.sh .
-RUN wget -qO- https://github.com/OpenVPN/easy-rsa/releases/download/3.0.1/EasyRSA-3.0.1.tgz | tar xvz --strip-components=1 && \
+RUN wget -qO- https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.8/EasyRSA-3.0.8.tgz | tar xvz --strip-components=1 && \
     chmod u+x entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
